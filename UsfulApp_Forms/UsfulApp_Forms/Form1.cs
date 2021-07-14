@@ -11,10 +11,18 @@ using System.Data.SqlClient;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 
+
+
 namespace UsfulApp_Forms
 {
     public partial class Form1 : Form
     {
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
         #region Menú y conección BD
         private IconButton currentBtn;
         private Panel leftBorder;
@@ -26,13 +34,14 @@ namespace UsfulApp_Forms
             leftBorder = new Panel();
             leftBorder.Size = new Size(8, 44);
             Nav.Controls.Add(leftBorder);
-
+         //   this.FormBorderStyle = FormBorderStyle.None;
+         //   Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 50, 50));
         }
 
         private struct RgbColors
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
-            public static Color color2 = Color.FromArgb(60, 82, 45);
+            public static Color color2 = Color.FromArgb(59, 122, 87);
             public static Color color3 = Color.FromArgb(253, 138, 114);
             public static Color color4 = Color.FromArgb(64, 224, 208);
             public static Color color5 = Color.FromArgb(249, 88, 155);
@@ -47,7 +56,7 @@ namespace UsfulApp_Forms
             if (senderBtn != null)
             {
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(0, 0, 128);
+                currentBtn.BackColor = Color.FromArgb(50, 49, 69);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -58,8 +67,9 @@ namespace UsfulApp_Forms
                 leftBorder.Location = new Point(0, currentBtn.Location.Y);
                 leftBorder.Visible = true;
                 leftBorder.BringToFront();
-                Home.IconChar = currentBtn.IconChar;
+                Home.IconChar = IconChar.Home;
                 Home.IconColor = color;
+             
             }
         }
 
@@ -67,17 +77,22 @@ namespace UsfulApp_Forms
         {
             if (currentBtn != null)
             {
-
-                currentBtn.BackColor = Color.FromArgb(0,0,128) ;
+                currentBtn.BackColor = Color.FromArgb(50, 49, 69) ;
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Gainsboro;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-                Home.IconChar = IconChar.Home;
                 Home.IconColor = Color.Gainsboro;
-                Home2.Text = "Home";
+                Home.Text = "Home";
+
             }
+        }
+
+
+        private void Home_Click(object sender, EventArgs e)
+        {
+            Reset();
         }
 
         private void Calendar_Click(object sender, EventArgs e)
@@ -85,40 +100,50 @@ namespace UsfulApp_Forms
             ActivateButtom(sender, RgbColors.color3);
         }
 
+
+        private void Settings_Click(object sender, EventArgs e)
+        {
+            ActivateButtom(sender, RgbColors.color2);
+        }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+            ActivateButtom(sender, RgbColors.color5);
+        }
+
         private void Reset()
         {
             CalendarButtom();
             leftBorder.Visible = false;
         }
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
 
-        private void Logo_Click(object sender, EventArgs e)
-        {
-            Reset();
-        }
         #endregion
 
-        public Form1()
-        {
-            InitializeComponent();
 
-          
-        }
 
-      
+
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
         {
 
         }
 
-      
-
-        private void iconButton3_Click(object sender, EventArgs e)
+        private void header_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-       
+        
     }
     
 }

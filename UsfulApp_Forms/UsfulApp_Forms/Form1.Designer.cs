@@ -29,105 +29,79 @@ namespace UsfulApp_Forms
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Nav = new System.Windows.Forms.Panel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.Home = new FontAwesome.Sharp.IconButton();
+            this.Settings = new FontAwesome.Sharp.IconButton();
             this.Calendar = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Logo = new System.Windows.Forms.PictureBox();
+            this.Login = new FontAwesome.Sharp.IconButton();
             this.header = new System.Windows.Forms.Panel();
-            this.Home2 = new System.Windows.Forms.Label();
-            this.Home = new FontAwesome.Sharp.IconPictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.Main = new System.Windows.Forms.Panel();
+            this.Verification = new FontAwesome.Sharp.IconPictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Nav.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Verification)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
-            this.header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Home)).BeginInit();
             this.SuspendLayout();
             // 
             // Nav
             // 
-            this.Nav.BackColor = System.Drawing.Color.Navy;
-            this.Nav.Controls.Add(this.iconButton3);
-            this.Nav.Controls.Add(this.iconButton2);
-            this.Nav.Controls.Add(this.iconButton1);
-            this.Nav.Controls.Add(this.Calendar);
+            this.Nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
             this.Nav.Controls.Add(this.panel1);
+            this.Nav.Controls.Add(this.Home);
+            this.Nav.Controls.Add(this.Settings);
+            this.Nav.Controls.Add(this.Calendar);
+            this.Nav.Controls.Add(this.Login);
             this.Nav.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Nav.Location = new System.Drawing.Point(0, 0);
+            this.Nav.Location = new System.Drawing.Point(0, 36);
             this.Nav.Name = "Nav";
-            this.Nav.Size = new System.Drawing.Size(194, 829);
+            this.Nav.Size = new System.Drawing.Size(200, 793);
             this.Nav.TabIndex = 0;
             // 
-            // iconButton3
+            // Home
             // 
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.CalendarWeek;
-            this.iconButton3.IconColor = System.Drawing.SystemColors.MenuBar;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 332);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
-            this.iconButton3.Size = new System.Drawing.Size(194, 44);
-            this.iconButton3.TabIndex = 7;
-            this.iconButton3.Text = "iconButton3";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.Home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home.FlatAppearance.BorderSize = 0;
+            this.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Home.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.Home.IconColor = System.Drawing.Color.Gainsboro;
+            this.Home.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Home.IconSize = 32;
+            this.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Home.Location = new System.Drawing.Point(0, 180);
+            this.Home.Name = "Home";
+            this.Home.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
+            this.Home.Size = new System.Drawing.Size(197, 44);
+            this.Home.TabIndex = 8;
+            this.Home.Text = "Home";
+            this.Home.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Home.UseVisualStyleBackColor = true;
+            this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
-            // iconButton2
+            // Settings
             // 
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.CalendarWeek;
-            this.iconButton2.IconColor = System.Drawing.SystemColors.MenuBar;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 282);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
-            this.iconButton2.Size = new System.Drawing.Size(194, 44);
-            this.iconButton2.TabIndex = 6;
-            this.iconButton2.Text = "iconButton2";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.CalendarWeek;
-            this.iconButton1.IconColor = System.Drawing.SystemColors.MenuBar;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 228);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
-            this.iconButton1.Size = new System.Drawing.Size(194, 44);
-            this.iconButton1.TabIndex = 5;
-            this.iconButton1.Text = "iconButton1";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.Settings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Settings.FlatAppearance.BorderSize = 0;
+            this.Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Settings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Settings.IconChar = FontAwesome.Sharp.IconChar.Cogs;
+            this.Settings.IconColor = System.Drawing.SystemColors.MenuBar;
+            this.Settings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Settings.IconSize = 32;
+            this.Settings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Settings.Location = new System.Drawing.Point(0, 330);
+            this.Settings.Name = "Settings";
+            this.Settings.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
+            this.Settings.Size = new System.Drawing.Size(194, 44);
+            this.Settings.TabIndex = 7;
+            this.Settings.Text = "Settimgs";
+            this.Settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Settings.UseVisualStyleBackColor = true;
+            this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
             // Calendar
             // 
@@ -141,7 +115,7 @@ namespace UsfulApp_Forms
             this.Calendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Calendar.IconSize = 32;
             this.Calendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Calendar.Location = new System.Drawing.Point(0, 178);
+            this.Calendar.Location = new System.Drawing.Point(0, 230);
             this.Calendar.Name = "Calendar";
             this.Calendar.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.Calendar.Size = new System.Drawing.Size(194, 44);
@@ -152,101 +126,99 @@ namespace UsfulApp_Forms
             this.Calendar.UseVisualStyleBackColor = true;
             this.Calendar.Click += new System.EventHandler(this.Calendar_Click);
             // 
-            // panel1
+            // Login
             // 
-            this.panel1.Controls.Add(this.Logo);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 175);
-            this.panel1.TabIndex = 0;
-            // 
-            // Logo
-            // 
-            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.Location = new System.Drawing.Point(22, 17);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(149, 136);
-            this.Logo.TabIndex = 0;
-            this.Logo.TabStop = false;
-            this.Logo.Click += new System.EventHandler(this.Logo_Click);
+            this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Login.FlatAppearance.BorderSize = 0;
+            this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Login.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.Login.IconColor = System.Drawing.SystemColors.MenuBar;
+            this.Login.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Login.IconSize = 32;
+            this.Login.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Login.Location = new System.Drawing.Point(0, 280);
+            this.Login.Name = "Login";
+            this.Login.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
+            this.Login.Size = new System.Drawing.Size(194, 44);
+            this.Login.TabIndex = 6;
+            this.Login.Text = "Login";
+            this.Login.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Login.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Login.UseVisualStyleBackColor = true;
+            this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // header
             // 
-            this.header.BackColor = System.Drawing.Color.Navy;
-            this.header.Controls.Add(this.Home2);
-            this.header.Controls.Add(this.Home);
+            this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header.Location = new System.Drawing.Point(194, 0);
+            this.header.Location = new System.Drawing.Point(0, 0);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(1278, 71);
+            this.header.Size = new System.Drawing.Size(1472, 36);
             this.header.TabIndex = 1;
+            this.header.Paint += new System.Windows.Forms.PaintEventHandler(this.header_Paint);
             // 
-            // Home2
+            // Main
             // 
-            this.Home2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Home2.Location = new System.Drawing.Point(82, 24);
-            this.Home2.Name = "Home2";
-            this.Home2.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Home2.Size = new System.Drawing.Size(45, 20);
-            this.Home2.TabIndex = 1;
-            this.Home2.Text = "Home";
+            this.Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Main.Location = new System.Drawing.Point(0, 36);
+            this.Main.Name = "Main";
+            this.Main.Size = new System.Drawing.Size(1472, 793);
+            this.Main.TabIndex = 2;
             // 
-            // Home
+            // Verification
             // 
-            this.Home.BackColor = System.Drawing.Color.Navy;
-            this.Home.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.Home.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.Home.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.Home.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Home.Location = new System.Drawing.Point(44, 17);
-            this.Home.Name = "Home";
-            this.Home.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.Home.Size = new System.Drawing.Size(32, 32);
-            this.Home.TabIndex = 0;
-            this.Home.TabStop = false;
+            this.Verification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
+            this.Verification.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Verification.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
+            this.Verification.IconColor = System.Drawing.Color.Gainsboro;
+            this.Verification.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.Verification.IconSize = 142;
+            this.Verification.Location = new System.Drawing.Point(26, 20);
+            this.Verification.Name = "Verification";
+            this.Verification.Size = new System.Drawing.Size(168, 142);
+            this.Verification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Verification.TabIndex = 0;
+            this.Verification.TabStop = false;
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(194, 71);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1278, 758);
-            this.panel3.TabIndex = 2;
+            this.panel1.Controls.Add(this.Verification);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 174);
+            this.panel1.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1472, 829);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.header);
             this.Controls.Add(this.Nav);
+            this.Controls.Add(this.Main);
+            this.Controls.Add(this.header);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Nav.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Verification)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
-            this.header.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Home)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel Nav;
         private System.Windows.Forms.Panel header;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton Calendar;
-        private System.Windows.Forms.PictureBox Logo;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.Label Home2;
-        private FontAwesome.Sharp.IconPictureBox Home;
+        private FontAwesome.Sharp.IconButton Settings;
+        private FontAwesome.Sharp.IconButton Login;
+        private FontAwesome.Sharp.IconButton Home;
+        private System.Windows.Forms.Panel Nav;
+        private System.Windows.Forms.Panel Main;
+        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconPictureBox Verification;
     }
 }
 
