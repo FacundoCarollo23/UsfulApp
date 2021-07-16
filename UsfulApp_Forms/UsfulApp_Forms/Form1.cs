@@ -93,22 +93,27 @@ namespace UsfulApp_Forms
         private void Home_Click(object sender, EventArgs e)
         {
             Reset();
+            currentChildForm.Close();
         }
 
-        private void Calendar_Click(object sender, EventArgs e)
+        
+        private void Event_Click(object sender, EventArgs e)
         {
             ActivateButtom(sender, RgbColors.color3);
+            OpenChildForm(new FormEvents());
         }
 
 
         private void Settings_Click(object sender, EventArgs e)
         {
             ActivateButtom(sender, RgbColors.color2);
+            OpenChildForm(new FormEvents());
         }
 
         private void Login_Click(object sender, EventArgs e)
         {
             ActivateButtom(sender, RgbColors.color5);
+            OpenChildForm(new FormEvents());
         }
 
         private void Reset()
@@ -116,6 +121,7 @@ namespace UsfulApp_Forms
             CalendarButtom();
             leftBorder.Visible = false;
         }
+        /*
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -126,6 +132,37 @@ namespace UsfulApp_Forms
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
+        */
+        private void OpenChildForm(Form childForm)
+        {
+            //open only form
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            //End
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            Main.Controls.Add(childForm);
+            Main.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            Nav.Text = childForm.Text;
+        }
+        
+        /*
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        */
 
         #endregion
 
@@ -143,7 +180,12 @@ namespace UsfulApp_Forms
 
         }
 
-        
+        private void Main_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
     }
     
 }

@@ -1,0 +1,4 @@
+C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeEventos\obj\Debug\netcoreapp3.1\CapadeEventos.csproj.AssemblyReference.cache
+C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeEventos\obj\Debug\netcoreapp3.1\CapadeEventos.AssemblyInfoInputs.cache
+C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeEventos\obj\Debug\netcoreapp3.1\CapadeEventos.AssemblyInfo.cs
+C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeEventos\obj\Debug\netcoreapp3.1\CapadeEventos.csproj.CoreCompileInputs.cache

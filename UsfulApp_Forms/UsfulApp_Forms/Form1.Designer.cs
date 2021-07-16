@@ -32,24 +32,19 @@ namespace UsfulApp_Forms
             this.Nav = new System.Windows.Forms.Panel();
             this.Home = new FontAwesome.Sharp.IconButton();
             this.Settings = new FontAwesome.Sharp.IconButton();
-            this.Calendar = new FontAwesome.Sharp.IconButton();
+            this.Event = new FontAwesome.Sharp.IconButton();
             this.Login = new FontAwesome.Sharp.IconButton();
             this.header = new System.Windows.Forms.Panel();
             this.Main = new System.Windows.Forms.Panel();
-            this.Verification = new FontAwesome.Sharp.IconPictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Nav.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Verification)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Nav
             // 
             this.Nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
-            this.Nav.Controls.Add(this.panel1);
             this.Nav.Controls.Add(this.Home);
             this.Nav.Controls.Add(this.Settings);
-            this.Nav.Controls.Add(this.Calendar);
+            this.Nav.Controls.Add(this.Event);
             this.Nav.Controls.Add(this.Login);
             this.Nav.Dock = System.Windows.Forms.DockStyle.Left;
             this.Nav.Location = new System.Drawing.Point(0, 36);
@@ -103,28 +98,28 @@ namespace UsfulApp_Forms
             this.Settings.UseVisualStyleBackColor = true;
             this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
-            // Calendar
+            // Event
             // 
-            this.Calendar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Calendar.FlatAppearance.BorderSize = 0;
-            this.Calendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Calendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calendar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Calendar.IconChar = FontAwesome.Sharp.IconChar.CalendarWeek;
-            this.Calendar.IconColor = System.Drawing.SystemColors.MenuBar;
-            this.Calendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Calendar.IconSize = 32;
-            this.Calendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Calendar.Location = new System.Drawing.Point(0, 230);
-            this.Calendar.Name = "Calendar";
-            this.Calendar.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
-            this.Calendar.Size = new System.Drawing.Size(194, 44);
-            this.Calendar.TabIndex = 4;
-            this.Calendar.Text = "Calendar";
-            this.Calendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Calendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Calendar.UseVisualStyleBackColor = true;
-            this.Calendar.Click += new System.EventHandler(this.Calendar_Click);
+            this.Event.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Event.FlatAppearance.BorderSize = 0;
+            this.Event.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Event.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Event.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Event.IconChar = FontAwesome.Sharp.IconChar.CalendarWeek;
+            this.Event.IconColor = System.Drawing.SystemColors.MenuBar;
+            this.Event.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Event.IconSize = 32;
+            this.Event.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Event.Location = new System.Drawing.Point(0, 230);
+            this.Event.Name = "Event";
+            this.Event.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
+            this.Event.Size = new System.Drawing.Size(194, 44);
+            this.Event.TabIndex = 4;
+            this.Event.Text = "Events";
+            this.Event.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Event.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Event.UseVisualStyleBackColor = true;
+            this.Event.Click += new System.EventHandler(this.Event_Click);
             // 
             // Login
             // 
@@ -163,62 +158,36 @@ namespace UsfulApp_Forms
             // 
             this.Main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
             this.Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Main.Location = new System.Drawing.Point(0, 36);
+            this.Main.Location = new System.Drawing.Point(200, 36);
             this.Main.Name = "Main";
-            this.Main.Size = new System.Drawing.Size(1472, 793);
+            this.Main.Size = new System.Drawing.Size(1272, 793);
             this.Main.TabIndex = 2;
-            // 
-            // Verification
-            // 
-            this.Verification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
-            this.Verification.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Verification.IconChar = FontAwesome.Sharp.IconChar.UserCheck;
-            this.Verification.IconColor = System.Drawing.Color.Gainsboro;
-            this.Verification.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.Verification.IconSize = 142;
-            this.Verification.Location = new System.Drawing.Point(26, 20);
-            this.Verification.Name = "Verification";
-            this.Verification.Size = new System.Drawing.Size(168, 142);
-            this.Verification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Verification.TabIndex = 0;
-            this.Verification.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.Verification);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 174);
-            this.panel1.TabIndex = 1;
+            this.Main.Paint += new System.Windows.Forms.PaintEventHandler(this.Main_Paint);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1472, 829);
-            this.Controls.Add(this.Nav);
             this.Controls.Add(this.Main);
+            this.Controls.Add(this.Nav);
             this.Controls.Add(this.header);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Nav.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Verification)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel header;
-        private FontAwesome.Sharp.IconButton Calendar;
+        private FontAwesome.Sharp.IconButton Event;
         private FontAwesome.Sharp.IconButton Settings;
         private FontAwesome.Sharp.IconButton Login;
         private FontAwesome.Sharp.IconButton Home;
         private System.Windows.Forms.Panel Nav;
         private System.Windows.Forms.Panel Main;
-        private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox Verification;
     }
 }
 
