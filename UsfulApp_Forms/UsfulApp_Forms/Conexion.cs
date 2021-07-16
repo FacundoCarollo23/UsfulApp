@@ -12,6 +12,7 @@ namespace UsfulApp_Forms
 {
     class Conexion
     {
+       
         SqlConnection cn;
         SqlCommand cmd;
         SqlDataReader dr;
@@ -29,6 +30,6 @@ namespace UsfulApp_Forms
                 MessageBox.Show("Conexion incorrecta :" + ex.ToString());
             }
         }
-
+        
     }
 }

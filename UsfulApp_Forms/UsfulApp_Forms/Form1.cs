@@ -107,13 +107,13 @@ namespace UsfulApp_Forms
         private void Settings_Click(object sender, EventArgs e)
         {
             ActivateButtom(sender, RgbColors.color2);
-            OpenChildForm(new FormEvents());
+         
         }
 
         private void Login_Click(object sender, EventArgs e)
         {
             ActivateButtom(sender, RgbColors.color5);
-            OpenChildForm(new FormEvents());
+            OpenChildForm(new Login());
         }
 
         private void Reset()
