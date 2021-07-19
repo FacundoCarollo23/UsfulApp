@@ -30,7 +30,7 @@ namespace UsfulApp_Forms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Conexion c = new Conexion();
+
             leftBorder = new Panel();
             leftBorder.Size = new Size(8, 44);
             Nav.Controls.Add(leftBorder);
@@ -101,6 +101,7 @@ namespace UsfulApp_Forms
         {
             ActivateButtom(sender, RgbColors.color3);
             OpenChildForm(new FormEvents());
+       
         }
 
 
@@ -151,7 +152,7 @@ namespace UsfulApp_Forms
             childForm.Show();
             Nav.Text = childForm.Text;
         }
-        
+
         /*
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -167,7 +168,7 @@ namespace UsfulApp_Forms
         #endregion
 
 
-
+    
 
 
         private void iconPictureBox2_Click(object sender, EventArgs e)
@@ -185,7 +186,10 @@ namespace UsfulApp_Forms
 
         }
 
-       
+        private void Nav_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     
 }

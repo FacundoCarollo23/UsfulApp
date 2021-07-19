@@ -51,6 +51,7 @@ namespace UsfulApp_Forms
             this.Nav.Name = "Nav";
             this.Nav.Size = new System.Drawing.Size(200, 793);
             this.Nav.TabIndex = 0;
+            this.Nav.Paint += new System.Windows.Forms.PaintEventHandler(this.Nav_Paint);
             // 
             // Home
             // 

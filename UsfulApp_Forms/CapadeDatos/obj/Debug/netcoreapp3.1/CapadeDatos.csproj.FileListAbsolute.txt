@@ -1,4 +1,0 @@
-C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeDatos\obj\Debug\netcoreapp3.1\CapadeDatos.csproj.AssemblyReference.cache
-C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeDatos\obj\Debug\netcoreapp3.1\CapadeDatos.AssemblyInfoInputs.cache
-C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeDatos\obj\Debug\netcoreapp3.1\CapadeDatos.AssemblyInfo.cs
-C:\Users\Facu\Desktop\UsefulApp_Forms\UsfulApp_Forms\CapadeDatos\obj\Debug\netcoreapp3.1\CapadeDatos.csproj.CoreCompileInputs.cache
